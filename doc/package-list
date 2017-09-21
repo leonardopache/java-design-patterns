@@ -1,0 +1,12 @@
+com.pache.designpatterns.facade
+com.pache.designpatterns.facade.assignment
+com.pache.designpatterns.facade.interfaces
+com.pache.designpatterns.factorymethod
+com.pache.designpatterns.factorymethod.assignment
+com.pache.designpatterns.factorymethod.interfaces
+com.pache.designpatterns.observer
+com.pache.designpatterns.observer.assignment
+com.pache.designpatterns.observer.interfaces
+com.pache.designpatterns.singleton
+com.pache.designpatterns.singleton.assignment
+com.pache.designpatterns.strategy
