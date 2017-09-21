@@ -1,12 +1,4 @@
 # Java Design Patterns
 
-_Implementation of some designs covered by GOF_
+_Implementation of some designs covered by "Java Design Patterns: A tour of 23 gang of four design patterns in Java"_
 
-doc/com/pache/designpatterns/observer/ObserverMain.html
-doc/com/pache/designpatterns/facade/FacadeMain.html
-doc/com/pache/designpatterns/factorymethod/FactoryMethodMain.html
-doc/com/pache/designpatterns/singleton/SingletonMain.html
-doc/com/pache/designpatterns/observer/class-use/ObserverMain.html
-doc/com/pache/designpatterns/facade/class-use/FacadeMain.html
-doc/com/pache/designpatterns/factorymethod/class-use/FactoryMethodMain.html
-doc/com/pache/designpatterns/singleton/class-use/SingletonMain.html
