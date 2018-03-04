@@ -3,7 +3,10 @@
  */
 package com.pache.designpatterns.singleton;
 
+import java.util.logging.Level;
+
 import com.pache.designpatterns.singleton.assignment.SingletonResource;
+import com.pache.utils.LoggerUtils;
 
 /**
  * Singleton Patterns
@@ -18,8 +21,8 @@ public class SingletonMain {
 		SingletonResource singleton1 = SingletonResource.getResource();
 		SingletonResource singleton2 = SingletonResource.getResource();
 		
-		System.out.println(singleton1 + " s1 == s2 " + singleton2);
-
+		String str = String.format("%s s1 == s2 %s",singleton1, singleton2);
+		LoggerUtils.getLogger(SingletonMain.class).log(Level.INFO, str);
 	}
 
 }
