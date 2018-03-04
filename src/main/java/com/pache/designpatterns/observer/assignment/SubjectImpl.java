@@ -2,9 +2,11 @@ package com.pache.designpatterns.observer.assignment;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 
 import com.pache.designpatterns.observer.interfaces.Observer;
 import com.pache.designpatterns.observer.interfaces.Subject;
+import com.pache.utils.LoggerUtils;
 
 public class SubjectImpl implements Subject {
 	
@@ -12,7 +14,7 @@ public class SubjectImpl implements Subject {
 	private List<Observer> listOfObservers = new ArrayList<>();
 
 	public SubjectImpl() {
-		System.out.println("Initialize subject value with 'Initial'");
+		LoggerUtils.getLogger(SubjectImpl.class).log(Level.INFO, "Initialize subject value with 'Initial'");
 		setValue("Initial");
 	}
 	public String getValue() {
@@ -39,6 +41,4 @@ public class SubjectImpl implements Subject {
 	public void unregister(Observer observer) {
 		listOfObservers.remove(observer);
 	}
-	
-
 }

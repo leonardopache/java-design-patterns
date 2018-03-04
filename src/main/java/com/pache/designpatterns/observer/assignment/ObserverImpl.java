@@ -1,6 +1,9 @@
 package com.pache.designpatterns.observer.assignment;
 
+import java.util.logging.Level;
+
 import com.pache.designpatterns.observer.interfaces.Observer;
+import com.pache.utils.LoggerUtils;
 
 public class ObserverImpl implements Observer {
 	
@@ -10,7 +13,8 @@ public class ObserverImpl implements Observer {
 		return value;
 	}
 	public void setValue(String value) {
-		System.out.println("Class '"+this.getClass().getSimpleName() +"' updated with value = "+ value);
+		String str = String.format("Class '%s' updated with value = %s", this.getClass().getSimpleName(), value);
+		LoggerUtils.getLogger(this.getClass()).log(Level.INFO, str);
 		this.value = value;
 	}
 
